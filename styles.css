@@ -1,0 +1,88 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the navigation menu */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff6347;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.nav-menu li {
+    margin: 0 1.5em;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #000;
+}
+
+/* Style for different sections */
+section {
+    padding: 100px 20px;
+    margin-top: 60px; /* Ensure content doesn't hide under fixed navbar */
+}
+
+#home {
+    background-color: #f0e68c;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/245/009/small/cute-seamless-pattern-with-colorful-pets-paws-vector.jpg");
+    text-align: center;
+    padding: 200px 20px;
+}
+#about {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/53/97/96/1000_F_153979609_i6SGjTHQdBknuxRcgtnVvx8G1ezK9Xoi.jpg");
+}
+#about, #contact {
+    background-color: #f4a460;
+    padding: 200px 20px;
+    text-align: center;
+}
+
+#gallery {
+    background-color: #ffe4b5;
+    padding: 200px 20px;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky navbar effect */
+.sticky {
+    background-color: #2e8b57 !important;
+}
+h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
